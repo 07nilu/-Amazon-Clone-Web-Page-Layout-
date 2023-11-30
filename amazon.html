@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>To Create Amazon Clone Web Page Layout.</title>
+    <style>
+        * {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+.navbar {
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-logo {
+    height: 50px;
+    width: 120px;
+
+}
+.logo {
+    background-image: url(https://www.thesun.co.uk/wp-content/uploads/2022/02/Amazon-Logo-1024x426-1.png);
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+
+
+}
+/* .border {
+    border: 2px solid white;
+} */
+
+.border:hover {
+    border: 2px solid whitesmoke;
+}
+
+/*This is For Box2 */
+.add-first {
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 15px;
+
+}
+.add-second {
+    font-size: 1rem;
+    margin-left: 3px;
+
+}
+.add-icon {
+    display: flex;
+    align-items: center;
+}
+
+/* This is For Box3 */
+.nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: pink;
+    width: 625px;
+    height: 40px;
+    border-radius: 5px;
+}
+#search-select {
+    background-color: #f3f3f3;
+    width: 50px;text-align: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+}
+.search-input {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+.search-icon {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #febd68;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #0f1111;
+}
+.nav-search:hover {
+    border: 2px solid orange;
+}
+
+
+/* This is for Box4 */
+span {
+    font-size: 0.7rem;
+}
+.nav-second {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* This is for Box6 */
+.nav-cart i {
+    font-size: 30px;
+
+}
+.nav-cart {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* This is for the Panel */
+.panel {
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.panel-options p {
+    display: inline;
+    margin-left: 15px;
+}
+.panel-options {
+    width: 70%;
+    font-size: 0.85rem;
+    
+}
+.panel-deals {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* This is for the Hero Section */
+.hero-section {
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/Events/img23/Jupiter23/Homepage/Phase3/J23_P3B_PC_NTA_Hero_2x_V1._CB573767479_.jpg);
+    height: 350px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.hero-message {
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 90%;
+    margin: 10px;
+
+}
+.hero-message a {
+    color: #007185;
+}
+
+/* This is for the Shop Section */
+.shop-section {
+    display: flex;
+    /* flex-wrap:wrap; */
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+    
+}
+.box {
+    height: 400px;
+    /* border: 2px solid black; */
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin: 15px;
+    
+
+}
+
+/* This is for the Box1 */
+.box1-img {
+    background-image: url(https://cdn.vectorstock.com/i/1000x1000/20/58/personal-hygiene-and-health-care-products-vector-31882058.webp);
+    background-size: cover;
+    height: 300px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.box1-contain {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.box p {
+    color: #007185;
+}
+
+/* This is for the Box2 */
+.box2-img {
+    background-image: url(https://img.freepik.com/free-photo/workplace-business-modern-male-accessories-laptop-white_155003-1722.jpg);
+    background-size: cover;
+    height: 300px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+.box2-contain {
+    /* margin-left: 15px;
+    margin-right: 15px; */
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* This is for the Box3 */
+.box3-img {
+    background-image: url(https://img.etimg.com/thumb/width-640,height-480,imgsize-38790,resizemode-75,msid-102401326/top-trending-products/news/amazon-great-freedom-festival-sale-kickstarter-deals-on-mobiles-and-accessories/wl_600x450.jpg);
+    background-size: cover;
+    height: 300px;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+     
+}
+.box3-contain {
+    
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* This is for the Box4 */
+.box4-img {
+    background-image: url(https://www.businessinsider.in/photo/94360225/url-refrigerator-window-and-split-ac-dishwasher-and-smart-led-tv-on-sale-on-amazon.jpg?imgsize=59894);
+    background-size: cover;
+    height: 300px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.box4-contain {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* This is for the Footer */
+footer {
+    margin-top: 15px;
+}
+.foot-panel1 {
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+/* This is for the Foot Panel 2 */
+.foot-panel2 {
+    background-color: #222f3d;
+    color: white;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+ul {
+    margin-top: 20px;
+}
+
+ul a {
+    display: block;
+    color: #dddddd;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+/* This is for the Foot Panel 3 */
+.foot-panel3 {
+    background-color: #222f3d;
+    color: white;
+    border-top: 2px solid white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    background-image: url(https://www.thesun.co.uk/wp-content/uploads/2022/02/Amazon-Logo-1024x426-1.png);
+    background-size: cover;
+    height: 50px;
+    width: 120px;
+}
+.foot-lang {
+    text-align: center;
+
+}
+#select-lang {
+    text-align: center;
+    background-color: #222f3d;
+    width: 120px;
+    height: 40px;
+    color: white;
+    margin-left: 60px;
+
+}
+
+
+/* This is for the Foot Panel 4 */
+.foot-panel4 {
+    background-color: #0f1111;
+    color: white;
+    height: 80px;
+    font-size: 0.8rem;
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items:center; */
+}
+.pages {
+    padding-top: 25px;
+}
+.copyright {
+    padding-top: 5px;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Below is for the First Box -->
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+
+            <!-- Below is for the Second Box -->
+            <div class="nav-address border">
+                <p class="add-first">Deliver</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-second">India</p>
+                </div>
+            </div>
+
+            <!-- Below is for the Third Box -->
+            <div class="nav-search">
+                <select name="" id="search-select">
+                    <option value="">All</option>
+                    <!-- <option value="">Patna</option>
+                    <option value="">Delhi</option>
+                    <option value="">Chennai</option> -->
+
+                    <input type="text" placeholder="Search Amazon" class="search-input">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </select>
+            </div>
+
+            <!-- Below is for the Fourth Box -->
+            <div class="nav-singin border">
+                <p><span>Hello, sign in</span></p>
+                <p class="nav-second">Accound & Lists</p>
+            </div>
+
+            <!-- Below is for the Fifth Box -->
+            <div class="nav-return border">
+                <p><span>Rreturn</span></p>
+                <p class="nav-second">&Order</p>
+            </div>
+
+
+            <!-- Below is for Sixth Box -->
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+            </div>
+        </div>
+
+        <!-- Below is for tha Panel -->
+        <div class="panel">
+            <div class="panel-all">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="panel-options">
+                <p>Today's Deals</p>
+                <p>Customer Service</p>
+                <p>Registry</p>
+                <p>Gift Cards</p>
+                <p>Sell</p>
+            </div>
+            <div class="panel-deals">
+                Shop deals in Electronics
+            </div>
+        </div>
+    </header>
+    
+    <!-- Below is for the Hero Section -->
+    <div class="hero-section">
+        <div class="hero-message">
+            <p>You are on amazon.com. You  can also shop on Amazaon India for millions of products with fast local delivery. <a href="https://www.amazon.in/">Click here to go to amazon.in</a></p>
+        </div>  
+    </div>
+
+    <div class="shop-section">
+        <div class="box1 box">
+            <div class="box1-contain">
+                <h2>Health &  Personal Care</h2>
+                <div class="box1-img"></div>
+                <p>See More</p>
+            </div>
+        </div>
+
+        <div class="box2 box">
+            <div class="box2-contain">
+                <h2>Electronics & Accessories</h2>
+                <div class="box2-img"></div>
+                <p>See More</p>
+            </div>
+        </div>
+
+        <div class="box3 box">
+            <div class="box3-contain">
+                <h2>Mobile & Accessories</h2>
+                <div class="box3-img"></div>
+                <p>See More</p>
+            </div>
+        </div>
+
+        <div class="box4 box">
+            <div class="box4-contain">
+                <h2>TV & Appliances</h2>
+                <div class="box4-img"></div>
+                <p>See More</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot-panel1">
+            Back to Top
+        </div>
+
+        <div class="foot-panel2">
+            <ul>
+                <p><b>Get to Know Us</b></p>
+                <a>About Us</a>
+                <a>Careers</a>
+                <a>Press Releases</a>
+                <a>Amazon Science</a>
+            </ul>
+
+            <ul>
+                <p><b>Connect with Us</b></p>
+                <a href="">Facebook</a>
+                <a href="">Twitter</a>
+                <a href="">Instagram</a>
+                <a href="">Google</a>
+            </ul>
+
+            <ul>
+                <p><b>Make Money with Us</b></p>
+                <a href="">Sell on Amazon</a>
+                <a href="">Sell under Amazon Accelerator</a>
+                <a href="">Protect and Build Your Brand</a>
+                <a href="">Amazon Global Selling</a>
+                <a href="">Become an Affiliate</a>
+                <a href="">Fulfilment by Amazon</a>
+                <a href="">Advertise Your Products</a>
+                <a href="">Amazon Pay on Merchants</a>
+            </ul>
+
+            <ul>
+                <p><b>Let Us Help You</b></p>
+                <a href="">COVID-19 and Amazon</a>
+                <a href="">Your Account</a>
+                <a href="">Returns Centre</a>
+                <a href="">100% Purchase Protection</a>
+                <a href="">Amazon App Download</a>
+                <a href="">Help</a>
+            </ul>
+            
+        </div>
+
+        <div class="foot-panel3">
+            <div class="logo">
+
+            </div>
+
+            <div class="foot-lang">
+                <select name="" id="select-lang">
+                    <option value="">English</option>
+                    <option value="">हिंदी</option>
+                    <option value="">भोजपुरी</option>
+                    <option value="">Tamil</option>
+                </select>
+
+            </div>
+
+        </div>
+        <div class="foot-panel4">
+            <div class="pages">
+                <a>Conditions of Use & Sale</a>
+                <a>Privacy Notice</a>
+                <a>Interest-Based Ads</a>
+            </div>
+            <div class="copyright">
+                © 1996-2023, Amazon.com, Inc. or its affiliates
+            </div>
+        </div>
+    </footer>
+</body>
+</html
